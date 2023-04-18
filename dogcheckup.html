@@ -1,186 +1,159 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business plan website</title>
-
-
-
+    <title>Dog services</title>
     <style>
 
 #heading{
-    margin: auto;
+    width: 35%;
     text-align: center;
-    width: 40%;
-}
+    margin: auto;
 
+}
+#heading>img{
+    width: 70px;
+    height: 70px;
+}
 #heading>h1{
-    font-size: 40px;
-    margin-top: -5px;
+    margin-top: 4px;
 }
-#heading>h1+p{
+
+#heading>p{
     margin-top: -15px;
 }
-
-
-#container{
-    width: 60%;
-    height: 310px;
+.container{
+    width: 75%;
+    height: auto;
     
     margin: auto;
-    display: flex;
-    margin-top: 70px;
-}
-
-#container>div{
-    height: 100%;
-    width: 30%;
-    margin: auto;
-   
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: 10px;
-
-}
-
-#heading2{
-    text-align: center;
-font-weight:900;
-
-font-size: 20px;
-
-
-}
-
-#container>div>h2{
-    text-align: center;
-
-}
-#container>div>h6{
-    text-align: center;
-    margin-top: -15px;
-    font-style: italic;
-}
-#container>div>h6+p{
-    width: 85%;
-    margin: auto;
-    text-align: center;
-    font-weight: 550;
-    margin-top: -5px;
-}
-#container>div>button{
-    height: 50px;
-    width: 150px;
-    margin-top: 10px;
-    border-radius: 5px;
-    background-color: transparent;
-    font-size: 15px;
-    font-weight: 900;
-    margin-left: 40px;
-   
-    color: blue;
-    border: 1px solid blue;
     margin-top: 40px;
+    display: flex;
+}
+.container>div{
+    width: 30%;
+    height: 100%;
+   
+    margin: auto;
+}
+.container>div>img{
+    width: 40%;
+    height: 100px;
+}
+.container>div>h3{
+    margin-top: 10px;
 
 }
-
-#container div:nth-child(1)> h2{
-    color: hsl(120,100%,25%);
+.container>div>p{
+    margin-top: -3px;
+    text-align: justify;
 }
-
-#container div:nth-child(2)> h2{
-    color: rgb(255,183,59)
-
+body div:nth-child(3){
+    margin-top: 15px;
 }
-
-#container div:nth-child(3)> h2{
-    
-    color: rgb(50,50,184)
-
-}
-
-
-
-
-
     </style>
 </head>
 <body>
 
 
-
 <div id="heading">
-<h1>Choose a plan that right for your business</h1>
-<p>We collect reviews from our users so you can get an honest opinion of what an experience with our website are really like!</p>
 
-
-
+<img src="data:image/png;base64,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" alt="">
+<h1>OUR SERVICES</h1>
+<p>Far far away, behind the word mountaines, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 
 
 </div>
 
+<div class="container">
 
 
+    <div>
+<img src="https://preview.colorlib.com/theme/dogger/images/dogger_checkup.svg" alt="">
 
+<h3>Dog Checkup</h3>
+<p>Far far away, behind the word mountaines, far from the countries Vokalia and Consonantia,
+     there live the blind texts.</p>
+    </div>
 
-<div id="container">
 
 
 
     <div>
+        <img src="https://preview.colorlib.com/theme/dogger/images/dogger_dermatology.svg" alt="">
 
-<p id="heading2">Starter Plan</p>
-<h2>Free</h2>
-<h6>Per month</h6>
-<p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
-
-<Button>Start Now</Button>
+        <h3>Dog Dermatology</h3>
+        <p>Far far away, behind the word mountaines, far from the countries Vokalia and Consonantia,
+             there live the blind texts.</p>
+            </div>
 
 
-    </div>
 
 
     <div>
-        <p id="heading2">Starter Plan</p>
-        <h2>$39.00</h2>
-        <h6>Per month</h6>
-        <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
-        
-        <Button>Start Now</Button>
+        <img src="https://preview.colorlib.com/theme/dogger/images/dogger_bones.svg" alt="">
 
+        <h3>Dog Strong Teeth</h3>
+        <p>Far far away, behind the word mountaines, far from the countries Vokalia and Consonantia,
+             there live the blind texts.</p>
+            </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<div class="container">
+
+
+    <div>
+<img src="https://preview.colorlib.com/theme/dogger/images/dogger_veterinary.svg" alt="">
+
+<h3>Dog First Aid</h3>
+<p>Far far away, behind the word mountaines, far from the countries Vokalia and Consonantia,
+     there live the blind texts.</p>
     </div>
 
 
-    <div><p id="heading2">Starter Plan</p>
-<h2>$59.00</h2>
-<h6>Per month</h6>
-<p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
 
-<Button>Start Now</Button>
+
+    <div>
+        <img src="https://preview.colorlib.com/theme/dogger/images/dogger_dryer.svg" alt="">
+
+        <h3>Dog Dryer</h3>
+        <p>Far far away, behind the word mountaines, far from the countries Vokalia and Consonantia,
+             there live the blind texts.</p>
+            </div>
+
+
+
+
+    <div>
+        <img src="https://preview.colorlib.com/theme/dogger/images/dogger_veterinarian.svg" alt="">
+
+        <h3>Expert Veterinarian</h3>
+        <p>Far far away, behind the word mountaines, far from the countries Vokalia and Consonantia,
+             there live the blind texts.</p>
+            </div>
+
+
+
+
+
 </div>
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
 
 
     
 </body>
 </html>
-
-
 
 
 
